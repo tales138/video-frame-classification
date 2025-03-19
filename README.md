@@ -102,8 +102,9 @@ Inside the src folder, there are three files :
 - report_genrator.py responsible for helping to generate the detection_report.json file.
 
 
-** The detection_report.json file has the following informations:
+** The detection_report.json file has the following informations:**
 
+```
 "total_frames_processed": 
 "frames_recognized": 
 "frames_unrecognized": 
@@ -115,7 +116,7 @@ Inside the src folder, there are three files :
         "confidence":
         }
 }
-
+```
 
 ## NOTE:
 In the env file it is possible to change video path. It is important ot highlight that a demo video is provided in this repository for testing the application.

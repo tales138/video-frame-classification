@@ -120,3 +120,16 @@ Inside the src folder, there are three files :
 
 ## NOTE:
 In the env file it is possible to change video path. It is important ot highlight that a demo video is provided in this repository for testing the application.
+
+# REQUIREMENTS
+```
+--pre
+torch
+torchvision
+torchaudio
+--index-url https://download.pytorch.org/whl/nightly/cu128
+numpy==2.1.2
+opencv-python==4.11.0.86
+python-dotenv==1.0.1
+
+```

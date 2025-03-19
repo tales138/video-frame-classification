@@ -15,7 +15,7 @@ def main():
     os.makedirs(recognized_folder, exist_ok=True)
     os.makedirs(unrecognized_folder, exist_ok=True)
 
-    # Extract frames
+    # Extract frames  
     extractor = FrameExtractor(video_path)
     frames = extractor.extract_frames()
 

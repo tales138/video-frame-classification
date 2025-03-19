@@ -1,7 +1,7 @@
 
 import os
 import torch
-from torchvision.models.detection import fasterrcnn_resnet50_fpn_v2, FasterRCNN_ResNet50_FPN_V2_Weights
+from torchvision.models.detection import fasterrcnn_resnet50_fpn_v2,FasterRCNN_ResNet50_FPN_V2_Weights
 from torchvision.utils import draw_bounding_boxes
 from torchvision.transforms.functional import to_pil_image
 
@@ -54,7 +54,7 @@ class FrameClassifier:
                         class_folder = os.path.join(self.recognized_folder, label)
                         os.makedirs(class_folder, exist_ok=True)
 
-                    img_with_boxes = draw_bounding_boxes(img, boxes=boxes, labels=labels, colors="red", width=4,font="arial",font_size=22)# Draw bounding boxes on the image
+                    img_with_boxes = draw_bounding_boxes(img, boxes=boxes, labels=labels, colors="red", width=4)# Draw bounding boxes on the image
 
 
                     # Add detection details to frame data and count frequency of each class

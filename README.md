@@ -122,6 +122,12 @@ Inside the src folder, there are three files :
 In the env file it is possible to change video path. It is important ot highlight that a demo video is provided in this repository for testing the application.
 
 # REQUIREMENTS
+
+```
+python version used 3.13.2
+
+```
+
 ```
 --pre
 torch

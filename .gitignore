@@ -1,14 +1,3 @@
-# Ignore all files in the 'output' folder
-output/*
-
-# But keep the '.gitkeep' file in the 'output' folder
-!output/.gitkeep
-
-# Ignore all files in the 'reports' folder
-reports/*
-
-# But keep the '.gitkeep' file in the 'reports' folder
-!reports/.gitkeep
 
 # Ignore all compiled Python files
 __pycache__/

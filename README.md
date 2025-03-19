@@ -10,7 +10,6 @@ VIDEO-FRAME-CLASSIFICATION/
 │   ├── unrecognized_frames/
 │   ├── .gitkeep
 │── reports/
-│   ├── detection_report.json
 │── src/
 │   ├── __init__.py
 │   ├── classify_frames.py

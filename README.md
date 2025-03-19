@@ -27,6 +27,18 @@ VIDEO-FRAME-CLASSIFICATION/
 
 ```
 
+# CONFIG VARIABLES
+
+In the .env file, it is possible to config the necessary varibles to run the application
+
+```
+VIDEO_PATH = "video.mp4"
+RECOGNIZED_FOLDER = "output/recognized_frames"
+UNRECOGNIZED_FOLDER = "output/unrecognized_frames"
+REPORT_PATH = "reports/detection_report.json"
+FRAME_RATE = 1
+```
+
 # Running the repository
 
 **Note: This application it was developed to support NVIIDIA CUDA hardware accelaration. CUDA 12.8 was used. If you want to run it using this feature check your CUDA version. If you prefer this application the can also be executed using only the CPU.

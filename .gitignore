@@ -1,6 +1,7 @@
 
-output/
-reports/
+output/unrecognized_frames
+output/recognized_frames
+reports/detection_report.json
 
 __pycache__/
 *.pyc

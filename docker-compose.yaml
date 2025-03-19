@@ -1,0 +1,23 @@
+
+### docker-compose.yml
+
+version: '3.8'
+
+services:
+  video-classifier:
+    build: .
+    container_name: video-classifier-container
+    volumes:
+      - .:/video-frame-detection
+
+    ports:
+      - "5000:5000"
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]

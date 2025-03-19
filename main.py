@@ -15,15 +15,15 @@ def main():
     os.makedirs(recognized_folder, exist_ok=True)
     os.makedirs(unrecognized_folder, exist_ok=True)
 
-    # Extrair frames do vídeo
+    # Extract frames
     extractor = FrameExtractor(video_path)
     frames = extractor.extract_frames()
 
-    # Classificar frames
+    # Classify frames
     classifier = FrameClassifier(recognized_folder, unrecognized_folder)
     report_data = classifier.classify_frames(frames)
 
-    # Gerar relatório
+    # Generate Report
     report_generator = ReportGenerator(report_path)
     report_generator.save_report(report_data)
     report_generator.print_summary()
